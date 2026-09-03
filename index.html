@@ -76,6 +76,7 @@
 
     .hint {
       margin-top: 24px;
+      margin-bottom: 24px;
       font-size: 14px;
       color: #7a7a7a;
       display: flex;
@@ -106,9 +107,21 @@
 .music-toggle:active {
   transform: scale(0.92);
 }
+
+.credits {
+  margin-top: 14px;
+  font-size: 13px;
+  color: #8c827a;
+  letter-spacing: 0.3px;
+  user-select: none;
+}
   </style>
 </head>
 <body>
+  <p class="hint">
+    <span>👆</span> Πατήστε πάνω στην κάρτα για να τη γυρίσετε
+  </p>
+
 
   <div class="card-scene" onclick="this.querySelector('.card').classList.toggle('is-flipped')">
     <div class="card">
@@ -121,8 +134,8 @@
     </div>
   </div>
 
-  <p class="hint">
-    <span>👆</span> Πατήστε πάνω στην κάρτα για να τη γυρίσετε
+  <p class="credits">
+  🎨 Καλλιτεχνική ομάδα: Δ. Γιαννακοπούλου, Δ. Καρλή
   </p>
   <!-- Audio Element (κρυφό) -->
 <audio id="bg-music" src="music.mp3" loop preload="auto"></audio>
